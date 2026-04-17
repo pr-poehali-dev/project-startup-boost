@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import Icon from "@/components/ui/icon";
 
 export function Hero() {
   return (
@@ -30,7 +30,7 @@ export function Hero() {
             className="group inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground rounded-full text-base hover:opacity-90 transition-all duration-300"
           >
             Начать бесплатно
-            <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform duration-300" />
+            <Icon name="ArrowRight" size={18} className="group-hover:translate-x-1 transition-transform duration-300" />
           </a>
           <a
             href="#philosophy"

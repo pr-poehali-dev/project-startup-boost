@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import Icon from "@/components/ui/icon";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,7 +52,7 @@ export function Header() {
           className="md:hidden p-2 text-foreground"
           aria-label="Открыть меню"
         >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <Icon name="X" size={24} /> : <Icon name="Menu" size={24} />}
         </button>
       </nav>
 

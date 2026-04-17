@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import Icon from "@/components/ui/icon";
 
 const plans = [
   {
@@ -65,7 +65,7 @@ export function Pricing() {
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-3">
-                    <Check size={18} className="text-sage" />
+                    <Icon name="Check" size={18} className="text-sage" />
                     <span className={plan.highlighted ? "text-primary-foreground/90" : "text-foreground"}>
                       {feature}
                     </span>

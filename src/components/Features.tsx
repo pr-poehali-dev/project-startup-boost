@@ -1,25 +1,25 @@
-import { Clock, Layers, Moon, Sparkles } from "lucide-react";
+import Icon from "@/components/ui/icon";
 
 const features = [
   {
-    icon: Clock,
+    icon: "Clock",
     title: "Неспешное планирование",
-    description: "Тайм-блоки, которые уважают ваши естественные ритмы. Между задачами всегда есть время на паузу.",
+    description: "Тайм-блоки, которые уважают ваши естественные ритмы. Между задачами всегда есть место для паузы и восстановления.",
   },
   {
-    icon: Layers,
+    icon: "Layers",
     title: "Фокус на текущем",
-    description: "Видите только то, что важно сейчас. Остальное терпеливо ждёт, пока вы будете готовы.",
+    description: "Видите только то, что важно прямо сейчас. Остальное терпеливо ждёт своего момента.",
   },
   {
-    icon: Moon,
+    icon: "Moon",
     title: "Часы тишины",
-    description: "Автоматические периоды покоя, которые защищают ваше время глубокой работы от отвлечений.",
+    description: "Автоматические периоды покоя защищают время глубокой работы — без уведомлений, без отвлечений.",
   },
   {
-    icon: Sparkles,
+    icon: "Sparkles",
     title: "Мягкая аналитика",
-    description: "Вдумчивые наблюдения за вашими паттернами — без осуждения, с поддержкой.",
+    description: "Вдумчивые наблюдения за вашими паттернами продуктивности — без давления, с пониманием.",
   },
 ];
 
@@ -41,7 +41,7 @@ export function Features() {
               className="group p-8 md:p-10 rounded-2xl bg-card border border-border hover:border-sage/30 transition-colors duration-500"
             >
               <div className="w-12 h-12 rounded-full bg-sage/10 flex items-center justify-center mb-6 group-hover:bg-sage/20 transition-colors duration-500">
-                <feature.icon size={24} className="text-sage" />
+                <Icon name={feature.icon} size={24} className="text-sage" />
               </div>
               <h3 className="font-serif text-2xl text-foreground mb-3">{feature.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
